@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouped Table by Sport with Male and Female Rows</title>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css">
+
+    <style>
+        /* Style for table columns to enhance distinction */
+        #example th, #example td {
+            border: 2px solid #000000; /* Light border around each cell */
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+        /* Distinct background colors for each column */
+        #example tbody tr td:nth-child(1),
+        #example tbody tr td:nth-child(2),
+        #example tbody tr td:nth-child(3), 
+        #example tbody tr td:nth-child(4), 
+        #example tbody tr td:nth-child(5), 
+        #example tbody tr td:nth-child(6),
+
+        /* Styling for header */
+        #example thead th {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Centering header images and setting a standard size */
+        #example thead th img {
+            display: block;
+            margin: 0 auto;
+            width: 40px;
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 95%; margin:0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); overflow-x: scroll;">
+    <table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>Sport</th>
+                <th>Gender</th>
+                <th><img src="AMBER DISTRICT 1.png" alt="Amber Emblem" style="width: 20%;"> </th>
+                <th><img src="AMBER DISTRICT 1.png" alt="Amber Emblem" style="width: 20%;"> </th>
+                <th><img src="AMBER DISTRICT 1.png" alt="Amber Emblem" style="width: 20%;"> </th>
+                <th><img src="AMBER DISTRICT 1.png" alt="Amber Emblem" style="width: 20%;"> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Basketball group -->
+            <tr>
+                <td><center>Basketball</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            <tr>
+                <td><center>Basketball</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            
+            <!-- Sepak Takraw group -->
+            <tr>
+                <td><center>Sepak Takraw</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            <tr>
+                <td><center>Sepak Takraw</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Volleyball group -->
+            <tr>
+                <td><center>Volleyball</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            <tr>
+                <td><center>Volleyball</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Tug of War group -->
+            <tr>
+                <td><center>Tug of War</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            <tr>
+                <td><center>Tug of War</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Pop Dance group -->
+            <tr>
+                <td><center>Pop Dance</center></td>
+                <td><center>Mix Male and Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Bench Cheer group -->
+            <tr>
+                <td><center>Bench Cheer</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Best in Yell group -->
+            <tr>
+                <td><center>Best in Yell</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            
+            <!-- Most Disciplined District group -->
+            <tr>
+                <td><center>Most Disciplined District</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Badminton group -->
+            <tr>
+                <td><center>Badminton</center></td>
+                <td><center>Doubles</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Table Tennis group -->
+            <tr>
+                <td><center>Table Tennis</center></td>
+                <td><center>Singles</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Futsal group -->
+            <tr>
+                <td><center>Futsal</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- Sack Race group -->
+            <tr>
+                <td><center>Sack Race</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+            <tr>
+                <td><center>Sack Race</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+
+            <!-- 4x100 Relay group -->
+            <tr>
+                <td><center>4x100 Relay</center></td>
+                <td><center>Mix Male and Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/2.1.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#example').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        scrollX: true,
+        paging: false,
+        ordering: false
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouped Table by Sport with Male and Female Rows</title>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css">
+
+    <style>
+        /* Style for table columns to enhance distinction */
+        #example th, #example td {
+            border: 2px solid #000000; /* Light border around each cell */
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            vertical-align: middle;
+            width: 15%; /* Set a uniform width for each column */
+        }
+
+        /* Distinct background colors for each column */
+        #example tbody tr td:nth-child(1),
+        #example tbody tr td:nth-child(2) ,
+        #example tbody tr td:nth-child(3), 
+        #example tbody tr td:nth-child(4), 
+        #example tbody tr td:nth-child(5), 
+        #example tbody tr td:nth-child(6) {
+            background-color: #f9f9f9; /* Optional: background color for distinction */
+        }
+
+        /* Styling for header */
+        #example thead th {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Centering header images and setting a standard size */
+        #example thead th img {
+            display: block;
+            margin: 0 auto;
+            width: 40%; /* Adjust image size if necessary */
+        }
+    </style>
+
+</head>
+<body>
+<div style="width: 95%; margin:0 auto; display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+overflow-x: scroll;">
+    <table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th>Sport</th>
+                <th>Gender</th>
+                <th><center>Amber</center></th>
+                <th><center>Goblin</center></th>
+                <th><center>Avalon</center></th>
+                <th><center>Zypher</center> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Basketball group -->
+            <tr>
+                <td><center>Basketball</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            <tr>
+                <td><center>Basketball</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            
+            <!-- Sepak Takraw group -->
+            <tr>
+                <td><center>Sepak Takraw</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            <tr>
+                <td><center>Sepak Takraw</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Volleyball group -->
+            <tr>
+                <td><center>Volleyball</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            <tr>
+                <td><center>Volleyball</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Tug of War group -->
+            <tr>
+                <td><center>Tug of War</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            <tr>
+                <td><center>Tug of War</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Pop Dance group -->
+            <tr>
+                <td><center>Pop Dance</center></td>
+                <td><center>Mix Male and Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Bench Cheer group -->
+            <tr>
+                <td><center>Bench Cheer</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Best in Yell group -->
+            <tr>
+                <td><center>Best in Yell</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            
+            <!-- Most Disciplined District group -->
+            <tr>
+                <td><center>Most Disciplined District</center></td>
+                <td><center> </center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Badminton group -->
+            <tr>
+                <td><center>Badminton</center></td>
+                <td><center>Doubles</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Table Tennis group -->
+            <tr>
+                <td><center>Table Tennis</center></td>
+                <td><center>Singles</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Futsal group -->
+            <tr>
+                <td><center>Futsal</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+
+            <!-- Sack Race group -->
+            <tr>
+                <td><center>Sack Race</center></td>
+                <td><center>Male</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            <tr>
+                <td><center>Sack Race</center></td>
+                <td><center>Female</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                <td><center>0</center></td>
+                
+            </tr>
+            
+
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.datatables.net/2.1.6/js/dataTables.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        var table = $('#example').DataTable({
+            "columnDefs": [
+                { "visible": false, "targets": 0 } // Hide the 'Sport' column for visual clarity
+            ],
+            "order": [[0, 'asc'], [1, 'asc']], // Order by Sport first, then Gender
+            "pageLength": -1, // Show all rows
+            "drawCallback": function(settings) {
+                var api = this.api();
+                var rows = api.rows({ page: 'current' }).nodes();
+                var lastSport = null;
+
+                api.column(0, { page: 'current' }).data().each(function(sport, i) {
+                    if (lastSport !== sport) {
+                        $(rows).eq(i).before(
+                            '<tr class="group"><td colspan="6"><strong>' + sport + '</strong></td></tr>'
+                        );
+                        lastSport = sport;
+                    }
+                });
+            }
+        });
+
+        // Order by the grouping
+        $('#example tbody').on('click', 'tr.group', function() {
+            var currentOrder = table.order()[0];
+            if (currentOrder[0] === 0 && currentOrder[1] === 'asc') {
+                table.order([0, 'desc']).draw();
+            } else {
+                table.order([0, 'asc']).draw();
+            }
+        });
+    });
+</script>
+</body>
+</html>
