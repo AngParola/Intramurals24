@@ -21,7 +21,7 @@
   <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=6JjF0N"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=6JjF0N" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=u3vE7B"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=u3vE7B" type="text/css">
 
   
   
@@ -78,250 +78,114 @@
     </div>
 </section>
 
-<meta charset="UTF-8" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"><title class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173">Grouped Table by Sport with Male and Female Rows</title><link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"><link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"><style class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173">
-        /* Style for table columns to enhance distinction */
+<meta charset="UTF-8" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"><title class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353">Grouped Table by Sport with Male and Female Rows</title><link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"><link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"><style class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353">
+        /* Basic table styling */
         #example th, #example td {
-            border: 2px solid #000000; /* Light border around each cell */
+            border: 2px solid #000000;
             padding: 10px;
             text-align: center;
             font-weight: bold;
             vertical-align: middle;
-            width: 15%; /* Set a uniform width for each column */
+            width: 15%;
         }
 
-        /* Distinct background colors for each column */
-        #example tbody tr td:nth-child(1),
-        #example tbody tr td:nth-child(2) ,
-        #example tbody tr td:nth-child(3), 
-        #example tbody tr td:nth-child(4), 
-        #example tbody tr td:nth-child(5), 
-        #example tbody tr td:nth-child(6) {
-            background-color: #f9f9f9; /* Optional: background color for distinction */
-        }
-
-        /* Styling for header */
+        /* Header styling */
         #example thead th {
             background-color: #ffffff;
             color: rgb(0, 0, 0);
         }
 
-        /* Centering header images and setting a standard size */
+        /* Center header images and set a standard size */
         #example thead th img {
             display: block;
             margin: 0 auto;
-            width: 40%; /* Adjust image size if necessary */
+            width: 40%;
         }
     </style><div style="width: 95%; margin:0 auto; display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-overflow-x: scroll;" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173">
+overflow-x: scroll;" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353">
     <table id="example" class="display nowrap" style="width:100%">
         <thead>
             <tr>
                 <th>Sport</th>
                 <th>Gender</th>
-                <th><center>Rank (Score)</center></th>
-
+                <th><center>Score</center></th>
+                
             </tr>
         </thead>
         <tbody>
-            <!-- Basketball group -->
-            <tr>
-                <td><center>Basketball</center></td>
-                <td><center>Male</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Basketball</center></td>
-                <td><center>Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
             
-            <!-- Sepak Takraw group -->
-            <tr>
-                <td><center>Sepak Takraw</center></td>
-                <td><center>Male</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Sepak Takraw</center></td>
-                <td><center>Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Volleyball group -->
-            <tr>
-                <td><center>Volleyball</center></td>
-                <td><center>Male</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Volleyball</center></td>
-                <td><center>Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Tug of War group -->
-            <tr>
-                <td><center>Tug of War</center></td>
-                <td><center>Male</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Tug of War</center></td>
-                <td><center>Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Pop Dance group -->
-            <tr>
-                <td><center>Pop Dance</center></td>
-                <td><center>Mix Male and Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Bench Cheer group -->
-            <tr>
-                <td><center>Bench Cheer</center></td>
-                <td><center> </center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Best in Yell group -->
-            <tr>
-                <td><center>Best in Yell</center></td>
-                <td><center> </center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            
-            <!-- Most Disciplined District group -->
-            <tr>
-                <td><center>Most Disciplined District</center></td>
-                <td><center> </center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Badminton group -->
-            <tr>
-                <td><center>Badminton</center></td>
-                <td><center>Mixed Doubles</center></td>
-                <td style="background-color: #d3d3d3;"><center style="color: #000000;">1.5 pts.</center></td>
-
-                
-            </tr>
-
-            <!-- Table Tennis group -->
-            <tr>
-                <td><center>Table Tennis</center></td>
-                <td><center>Singles</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-
-            <!-- Futsal group -->
-            <tr>
-                <td><center>Futsal</center></td>
-                <td><center>Female</center></td>
-                <td style="background-color: #90ee90;"><center>4 pts.</center></td>
-
-                
-            </tr>
-
-            <!-- Sack Race group -->
-            <tr>
-                <td><center>Sack Race</center></td>
-                <td><center>Male</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Sack Race</center></td>
-                <td><center>Female</center></td>
-                <td><center>0</center></td>
-
-                
-            </tr>
-            
-            <!-- Chess group -->
-            <tr>
-                <td><center>Chess</center></td>
-                <td><center>Male</center></td>
-                <td style="background-color: #ff0000;"><center>1 pt.</center></td>
-
-                
-            </tr>
-            <tr>
-                <td><center>Chess</center></td>
-                <td><center>Female</center></td>
-                <td style="background-color: #ff4500;"><center>1.5 pts.</center></td>
-
-                
-            </tr>
-            
-            
-
         </tbody>
     </table>
-</div><script src="https://code.jquery.com/jquery-3.7.1.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdn.datatables.net/2.1.6/js/dataTables.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173"></script><script class="cid-uqGTessE44" id="custom-html-d" data-rv-view="173">
+</div><script src="https://code.jquery.com/jquery-3.7.1.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdn.datatables.net/2.1.6/js/dataTables.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js" class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353"></script><script class="cid-uqGTessE44" id="custom-html-d" data-rv-view="353">
     $(document).ready(function() {
-        var table = $('#example').DataTable({
-            "columnDefs": [
-                { "visible": false, "targets": 0 } // Hide the 'Sport' column for visual clarity
-            ],
-            "order": [[0, 'asc'], [1, 'asc']], // Order by Sport first, then Gender
-            "pageLength": -1, // Show all rows
-            "drawCallback": function(settings) {
-                var api = this.api();
-                var rows = api.rows({ page: 'current' }).nodes();
-                var lastSport = null;
+        // Fetch data with formatting from Google Sheets
+        fetch(`https://sheets.googleapis.com/v4/spreadsheets/1mFhFBI4Y9S4KMZeRthz7JRxeeLwVpLn88gHQ6k2cTYY?key=AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ&includeGridData=true`)
+            .then(response => response.json())
+            .then(data => {
+                const sheetData = data.sheets[0].data[0].rowData; // Assumes data is in the first sheet
+                let tableBody = '';
 
-                api.column(0, { page: 'current' }).data().each(function(sport, i) {
-                    if (lastSport !== sport) {
-                        $(rows).eq(i).before(
-                            '<tr class="group"><td colspan="6"><strong>' + sport + '</strong></td></tr>'
-                        );
-                        lastSport = sport;
+                // Populate table rows and apply background colors
+                sheetData.forEach((row, rowIndex) => {
+                    if (rowIndex === 0) return; // Skip header row
+                    if (!row.values) return; // Skip empty rows
+
+                    let rowHtml = '<tr>';
+                    row.values.forEach((cell, cellIndex) => {
+                        const cellValue = cell.userEnteredValue ? (cell.userEnteredValue.stringValue || cell.userEnteredValue.numberValue || '') : '';
+                        
+                        // Get the cell background color if available
+                        const bgColor = cell.userEnteredFormat && cell.userEnteredFormat.backgroundColor;
+                        const color = bgColor
+                            ? `rgba(${(bgColor.red || 0) * 255}, ${(bgColor.green || 0) * 255}, ${(bgColor.blue || 0) * 255}, ${bgColor.alpha || 1})`
+                            : '#ffffff'; // Default to white if no color is specified
+
+                        rowHtml += `<td style="background-color: ${color};">${cellValue}</td>`;
+                    });
+                    rowHtml += '</tr>';
+                    tableBody += rowHtml;
+                });
+
+                // Append rows to table
+                $('#example tbody').html(tableBody);
+
+                // Initialize DataTable with grouping functionality
+                var table = $('#example').DataTable({
+                    "columnDefs": [
+                        { "visible": false, "targets": 0 }
+                    ],
+                    "order": [[0, 'asc'], [1, 'asc']],
+                    "pageLength": -1,
+                    "drawCallback": function(settings) {
+                        var api = this.api();
+                        var rows = api.rows({ page: 'current' }).nodes();
+                        var lastSport = null;
+
+                        api.column(0, { page: 'current' }).data().each(function(sport, i) {
+                            if (lastSport !== sport) {
+                                $(rows).eq(i).before(
+                                    '<tr class="group"><td colspan="6"><strong>' + sport + '</strong></td></tr>'
+                                );
+                                lastSport = sport;
+                            }
+                        });
                     }
                 });
-            }
-        });
 
-        // Order by the grouping
-        $('#example tbody').on('click', 'tr.group', function() {
-            var currentOrder = table.order()[0];
-            if (currentOrder[0] === 0 && currentOrder[1] === 'asc') {
-                table.order([0, 'desc']).draw();
-            } else {
-                table.order([0, 'asc']).draw();
-            }
-        });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function() {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 0 && currentOrder[1] === 'asc') {
+                        table.order([0, 'desc']).draw();
+                    } else {
+                        table.order([0, 'asc']).draw();
+                    }
+                });
+            })
+            .catch(error => console.error('Error fetching data from Google Sheets:', error));
     });
-</script><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3408938" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</script><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3408938" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Creator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
