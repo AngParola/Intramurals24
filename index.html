@@ -21,7 +21,7 @@
   <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=HiABuB"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=HiABuB" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=0mMH3j"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=0mMH3j" type="text/css">
 
   
   
@@ -82,13 +82,13 @@
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
                 
-                <div id="events-container" class="events-container">
+                <div id="events-container" class="events-container d-flex flex-wrap justify-content-center">
                     <!-- Events will load here dynamically -->
                 </div>
             </div>
         </div>
     </div>
-</section><script class="cid-ur5K1Q2bIu" id="custom-html-1d" data-rv-view="111">
+</section><script class="cid-ur5K1Q2bIu" id="custom-html-1d" data-rv-view="174">
     const sheetId = '1RpTMfOD8LMXJY8jlX9vRwglY-fXocaFFGpTOItMCGLU';  // Replace with your Google Sheet ID
     const apiKey = 'AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ';       // Replace with your Google Sheets API key
     const range = 'Sheet1!A2:G';                                     // Range to cover all rows
@@ -103,19 +103,19 @@
 
             rows.forEach(row => {
                 const eventHTML = `
-                    <div style="margin-bottom: 20px; text-align: center;">
+                    <div style="margin: 20px; padding: 15px; background-color: #f9f9f9; border-radius: 8px; width: 300px; text-align: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                         <h4>${row[6]}</h4> <!-- Sport Name -->
-                        <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-                            <div style="display: flex; align-items: center; margin-right: 20px; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                            <div style="display: flex; align-items: center; flex-direction: column;">
                                 <img src="${row[1]}" alt="${row[0]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
                                 <span style="font-size: 18px; font-weight: normal;">${row[0]}</span> <!-- Team name -->
-                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[2]}</span> <!-- Score, larger and bold -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[2]}</span> <!-- Score -->
                             </div>
-                            <span style="font-size: 20px; font-weight: bold; margin: 0 20px;">vs.</span>
-                            <div style="display: flex; align-items: center; margin-left: 20px; flex-direction: column;">
+                            <span style="font-size: 20px; font-weight: bold; margin: 0 10px;">vs.</span>
+                            <div style="display: flex; align-items: center; flex-direction: column;">
                                 <img src="${row[4]}" alt="${row[3]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
                                 <span style="font-size: 18px; font-weight: normal;">${row[3]}</span> <!-- Team name -->
-                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[5]}</span> <!-- Score, larger and bold -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[5]}</span> <!-- Score -->
                             </div>
                         </div>
                     </div>
@@ -131,14 +131,14 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4">Current Events</h3>
-                <div id="events-container" class="events-container">
+                
+                <div id="events-container" class="events-container d-flex flex-wrap justify-content-center">
                     <!-- Events will load here dynamically -->
                 </div>
             </div>
         </div>
     </div>
-</section><script class="cid-ur7WXNdf0N" id="custom-html-1e" data-rv-view="113">
+</section><script class="cid-ur7WXNdf0N" id="custom-html-1e" data-rv-view="176">
     const sheetId = '1RpTMfOD8LMXJY8jlX9vRwglY-fXocaFFGpTOItMCGLU';  // Replace with your Google Sheet ID
     const apiKey = 'AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ';       // Replace with your Google Sheets API key
     const range = 'Sheet1!A2:G';                                     // Range to cover all rows
@@ -153,19 +153,69 @@
 
             rows.forEach(row => {
                 const eventHTML = `
-                    <div style="margin-bottom: 20px; text-align: center;">
+                    <div style="margin: 20px; padding: 15px; background-color: #f9f9f9; border-radius: 8px; width: 300px; text-align: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
                         <h4>${row[6]}</h4> <!-- Sport Name -->
-                        <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px;">
-                            <div style="display: flex; align-items: center; margin-right: 20px; flex-direction: column;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                            <div style="display: flex; align-items: center; flex-direction: column;">
                                 <img src="${row[1]}" alt="${row[0]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
                                 <span style="font-size: 18px; font-weight: normal;">${row[0]}</span> <!-- Team name -->
-                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[2]}</span> <!-- Score, larger and bold -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[2]}</span> <!-- Score -->
                             </div>
-                            <span style="font-size: 20px; font-weight: bold; margin: 0 20px;">vs.</span>
-                            <div style="display: flex; align-items: center; margin-left: 20px; flex-direction: column;">
+                            <span style="font-size: 20px; font-weight: bold; margin: 0 10px;">vs.</span>
+                            <div style="display: flex; align-items: center; flex-direction: column;">
                                 <img src="${row[4]}" alt="${row[3]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
                                 <span style="font-size: 18px; font-weight: normal;">${row[3]}</span> <!-- Team name -->
-                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[5]}</span> <!-- Score, larger and bold -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[5]}</span> <!-- Score -->
+                            </div>
+                        </div>
+                    </div>
+                `;
+                eventsContainer.innerHTML += eventHTML;
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
+
+<section data-bs-version="5.1" class="content4 cid-ur9mEfWC3p" id="custom-html-1f">
+    <div class="mbr-overlay" style="opacity: 0.7; background-color: #ffffff;"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                
+                <div id="events-container" class="events-container d-flex flex-wrap justify-content-center">
+                    <!-- Events will load here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section><script class="cid-ur9mEfWC3p" id="custom-html-1f" data-rv-view="178">
+    const sheetId = '1RpTMfOD8LMXJY8jlX9vRwglY-fXocaFFGpTOItMCGLU';  // Replace with your Google Sheet ID
+    const apiKey = 'AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ';       // Replace with your Google Sheets API key
+    const range = 'Sheet1!A2:G';                                     // Range to cover all rows
+
+    const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/1RpTMfOD8LMXJY8jlX9vRwglY-fXocaFFGpTOItMCGLU/values/Sheet1!A2:G?key=AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ`;
+
+    fetch(sheetUrl)
+        .then(response => response.json())
+        .then(data => {
+            const eventsContainer = document.getElementById('events-container');
+            const rows = data.values;
+
+            rows.forEach(row => {
+                const eventHTML = `
+                    <div style="margin: 20px; padding: 15px; background-color: #f9f9f9; border-radius: 8px; width: 300px; text-align: center; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                        <h4>${row[6]}</h4> <!-- Sport Name -->
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                            <div style="display: flex; align-items: center; flex-direction: column;">
+                                <img src="${row[1]}" alt="${row[0]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
+                                <span style="font-size: 18px; font-weight: normal;">${row[0]}</span> <!-- Team name -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[2]}</span> <!-- Score -->
+                            </div>
+                            <span style="font-size: 20px; font-weight: bold; margin: 0 10px;">vs.</span>
+                            <div style="display: flex; align-items: center; flex-direction: column;">
+                                <img src="${row[4]}" alt="${row[3]}" style="width: 80px; height: 80px; margin-bottom: 5px;">
+                                <span style="font-size: 18px; font-weight: normal;">${row[3]}</span> <!-- Team name -->
+                                <span style="font-size: 24px; font-weight: bold; color: black;">${row[5]}</span> <!-- Score -->
                             </div>
                         </div>
                     </div>
@@ -193,7 +243,7 @@
     </div>
 </section>
 
-<meta charset="UTF-8" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"><title class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117">Grouped Table by Sport with Male and Female Rows</title><link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"><link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"><style class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117">
+<meta charset="UTF-8" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"><meta name="viewport" content="width=device-width, initial-scale=1.0" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"><title class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183">Grouped Table by Sport with Male and Female Rows</title><link rel="stylesheet" href="https://cdn.datatables.net/2.1.6/css/dataTables.dataTables.css" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"><link rel="stylesheet" href="https://cdn.datatables.net/buttons/3.1.2/css/buttons.dataTables.css" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"><style class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183">
         /* Basic table styling */
         #example th, #example td {
             border: 2px solid #000000;
@@ -218,7 +268,7 @@
         }
     </style><div style="width: 95%; margin:0 auto; display: grid;
 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-overflow-x: scroll;" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117">
+overflow-x: scroll;" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183">
     <table id="example" class="display nowrap" style="width:100%">
         <thead>
             <tr>
@@ -235,7 +285,7 @@ overflow-x: scroll;" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117
             
         </tbody>
     </table>
-</div><script src="https://code.jquery.com/jquery-3.7.1.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdn.datatables.net/2.1.6/js/dataTables.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117"></script><script class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117">
+</div><script src="https://code.jquery.com/jquery-3.7.1.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdn.datatables.net/2.1.6/js/dataTables.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/dataTables.buttons.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.html5.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script src="https://cdn.datatables.net/buttons/3.1.2/js/buttons.print.min.js" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183"></script><script class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="183">
     $(document).ready(function() {
         // Fetch data with formatting from Google Sheets
         fetch(`https://sheets.googleapis.com/v4/spreadsheets/1cx6z72CzbB_eSwpE46e8-5i9jEblnWiLhSQrRDWfdCw?key=AIzaSyB1A4QxXCsSpXPvZ0SNeLtJs6GnJJO-JyQ&includeGridData=true`)
@@ -303,7 +353,7 @@ overflow-x: scroll;" class="cid-uqGocyHfZl" id="custom-html-5" data-rv-view="117
             })
             .catch(error => console.error('Error fetching data from Google Sheets:', error));
     });
-</script><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3408938" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-generator.html">AI Website Generator</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</script><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3408938" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com">Mobirise.com </a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
